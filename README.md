@@ -13,6 +13,9 @@ Starter kit boilerplate for NextJS (14)
 - Authentication
 - Prisma
 - Shadcn UI
+- Turbo Pack
+- eslint compiling warnings disabled (for faster build times)
+- typescript compiling warnings and errors disabled (for faster build times)
 
 
 ## Run Locally
