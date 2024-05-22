@@ -12,6 +12,7 @@ Starter kit boilerplate for NextJS (14)
 - Light/dark mode toggle
 - Authentication
 - Prisma
+- Shadcn UI
 
 
 ## Run Locally
