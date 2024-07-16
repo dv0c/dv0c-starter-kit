@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
 import Header from "@/components/Header";
+import { Manrope } from "next/font/google";
 
 
 export const metadata: Metadata = {
   title: "Meindesk",
   description: "meindesk-app",
 };
+const manrope = Manrope({ subsets: ["latin", "greek"], weight: ["200", "300", "400", "500", "600", "700", "800"], display: "swap" });
+
 
 export default function RootLayout({
   children,
@@ -14,11 +17,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main>
+    <main className={manrope.className}>
       <Header />
-      <div className="mt-2">
-        {children}
-      </div>
+      {children}
     </main>
   );
 }
