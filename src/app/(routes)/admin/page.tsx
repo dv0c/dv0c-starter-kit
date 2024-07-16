@@ -1,3 +1,4 @@
+import { ThemeSwitcher } from "@/components/ui/theme-switcher"
 import { getAuthSession } from "@/lib/auth"
 import { notFound } from "next/navigation"
 
@@ -10,6 +11,7 @@ const page = async () => {
   return <div>
     Admin page
     ## This page should be protected
+    <ThemeSwitcher />
   </div>
 }
 
