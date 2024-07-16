@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-// import "./globals.css";
+import "@/app/globals.css";
+import Header from "@/components/Header";
 
 
 export const metadata: Metadata = {
-  title: "Psycology Platform",
-  description: "Psycology Platform app",
+  title: "Meindesk",
+  description: "meindesk-app",
 };
 
 export default function RootLayout({
@@ -13,6 +14,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <main>{children}</main>
+    <main>
+      <Header />
+      {children}
+    </main>
   );
 }
