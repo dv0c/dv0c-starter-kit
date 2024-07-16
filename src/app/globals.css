@@ -29,6 +29,10 @@
     --chart-3: ;
     --chart-4: ;
     --chart-5: ;
+    --whatWeOffer-Root_Cross_Platform: #ffeade;
+    --whatWeOffer-Root_Social_Media: #d1ecf7;
+    --whatWeOffer-Root_Business_Strategy: #dff9f3;
+    --whatWeOffer-Root_Local_Marketing: #fdffd4;
   }
 
   .dark {
@@ -56,6 +60,10 @@
     --chart-3: ;
     --chart-4: ;
     --chart-5: ;
+    --whatWeOffer-Root_Cross_Platform: #ffeade;
+    --whatWeOffer-Root_Social_Media: #d1ecf7;
+    --whatWeOffer-Root_Business_Strategy: #dff9f3;
+    --whatWeOffer-Root_Local_Marketing: #fdffd4;
   }
 }
 
@@ -83,4 +91,20 @@
   transform: translateY(-50%);
   background-color: #024430;
   left: 0;
+}
+
+.bg-whatWeOffer-Root_Cross_Platform {
+  background-color: var(--whatWeOffer-Root_Cross_Platform);
+}
+
+.bg-whatWeOffer-Root_Social_Media {
+  background-color: var(--whatWeOffer-Root_Social_Media);
+}
+
+.bg-whatWeOffer-Root_Business_Strategy {
+  background-color: var(--whatWeOffer-Root_Business_Strategy);
+}
+
+.bg-whatWeOffer-Root_Local_Marketing {
+  background-color: var(--whatWeOffer-Root_Local_Marketing);
 }
