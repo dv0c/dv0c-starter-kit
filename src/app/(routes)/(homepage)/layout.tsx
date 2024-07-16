@@ -16,7 +16,9 @@ export default function RootLayout({
   return (
     <main>
       <Header />
-      {children}
+      <div className="mt-2">
+        {children}
+      </div>
     </main>
   );
 }
