@@ -68,9 +68,9 @@ const MobileNavigation = () => {
                         <Logo />
                         <Separator />
                     </SheetHeader>
-                    <div className="flex-1 space-y-3">
+                    <div className="flex-1 max-[375px]:space-y-2 space-y-3">
                         {header_navigation.map((nav, index) => (
-                            <div key={index} className="text-3xl p-3 active:scale-[.98] transition-all active:underline font-semibold">
+                            <div key={index} className="max-[375px]:text-2xl min-[376px]:p-3 text-3xl active:scale-[.98] transition-all active:underline font-semibold">
                                 <Link href={nav.href}>
                                     {nav.name}
                                 </Link>
