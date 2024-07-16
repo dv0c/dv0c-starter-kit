@@ -68,18 +68,19 @@ const MobileNavigation = () => {
                     </SheetHeader>
                     <div className="flex-1 space-y-3">
                         {header_navigation.map((nav, index) => (
-                            <div key={index} className="text-3xl p-3 active:scale-[.98] active:underline font-semibold">
+                            <div key={index} className="text-3xl p-3 active:scale-[.98] transition-all active:underline font-semibold">
                                 <Link href={nav.href}>
                                     {nav.name}
                                 </Link>
                             </div>
                         ))}
-                            <Button variant={'primary'} className="w-full !mt-10">Get started</Button>
+                            <Button variant={'primary'} className="w-full !mt-5">Get started</Button>
                     </div>
                     <Separator />
                     <SheetFooter >
                         <div className="flex flex-col">
-                            <p className="text-xs text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita fuga veniam quia aliquam quos animi, nisi qui, perspiciatis reiciendis perferendis ipsum ipsam maiores explicabo quis ipsa nostrum repudiandae fugiat.</p>
+                            <p className="text-xs text-muted-foreground">Our services offer great value with competitive pricing and top-notch security. We ensure your website is protected with the latest measures. Contact us to learn more about our affordable rates and secure website solutions.
+                            </p>
                             <div className="flex flex-col mt-10">
                                 <p className="text-sm text-muted-foreground mb-2">Secured Payment Gateways</p>
                                 <div>
@@ -88,7 +89,7 @@ const MobileNavigation = () => {
                             </div>
                             <div className="mt-5">
                                 <Separator />
-                                <p className="text-xs mt-5 text-muted-foreground">Copyright 2022 © MEINDESK - Website Builder.</p>
+                                <p className="text-xs mt-5 text-muted-foreground">Copyright {new Date().getFullYear()} © MEINDESK - Website Development & Design.                                .</p>
                             </div>
                         </div>
                     </SheetFooter>
