@@ -11,19 +11,21 @@ import PaymentGateWays from '../../public/payment-method.png'
 
 const Header = () => {
     return <header className="bg-background sticky top-0 w-full border-b-2">
-        <div className="flex container p-5 items-center justify-between">
+        <div className="flex container p-5 items-center justify-between max-[405px]:flex-wrap max-[405px]:gap-3">
             <div className="flex items-center gap-10">
                 <Link href={'/'}>
                     <Logo />
                 </Link>
                 <DesktopNavigation />
             </div>
-            <div className="flex items-center gap-3">
-                <Search size={18} />
-                <span className="flex items-center">
-                    EN
-                    <MdOutlineKeyboardArrowDown size={18} />
-                </span>
+            <div className="flex items-center gap-3 max-[405px]:justify-end">
+                <div className="max-[503px]:hidden flex gap-3 items-center">
+                    <Search size={18} />
+                    <span className="flex items-center">
+                        EN
+                        <MdOutlineKeyboardArrowDown size={18} />
+                    </span>
+                </div>
                 <Button variant={'primary'} className="">Get Started</Button>
                 <MobileNavigation />
             </div>
@@ -74,7 +76,7 @@ const MobileNavigation = () => {
                                 </Link>
                             </div>
                         ))}
-                            <Button variant={'primary'} className="w-full !mt-5">Get started</Button>
+                        <Button variant={'primary'} className="w-full !mt-5">Get started</Button>
                     </div>
                     <Separator />
                     <SheetFooter >
